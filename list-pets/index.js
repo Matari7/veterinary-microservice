@@ -24,6 +24,13 @@ app.get('/pets', async (req, res) => {
   res.status(200).json({ user: req.user, pets: result });
 });
 
+app.get('/pets2', (req, res) => {
+  res.json({
+    username: 'admin',
+    password: 'password'
+  });
+});
+
 app.listen(3001, () => {
   console.log('Pet listing microservice listening on port 3001');
 });

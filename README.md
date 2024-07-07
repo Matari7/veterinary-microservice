@@ -39,7 +39,7 @@ You must have the Docker desktop downloaded on the computer, due to the docker-c
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_This is the installation of the project._
 
 1. Clone the repo
    ```sh

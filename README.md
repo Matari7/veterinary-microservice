@@ -26,7 +26,7 @@ Additionally, the project uses Redis as shared storage for the pets.
 
 ### Prerequisites
 
-You must have the Docker desktop downloaded on the computer, due to the docker-compose in addition to having Postman installed, y la version de npm instalada
+You must have the Docker desktop downloaded on the computer, due to the docker-compose in addition to having Postman installed, and the latest version of npm
 * npm
   ```sh
   npm install npm@latest -g

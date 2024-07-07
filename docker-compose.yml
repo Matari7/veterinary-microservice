@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  pets:
+    build: ./pets
+    ports:
+      - "3000:3000"
+    depends_on:
+      - redis
+  list-pets:
+    build: ./list-pets
+    ports:
+      - "3001:3001"
+    depends_on:
+      - redis
+  autenticacion:
+    build: ./authentication
+    ports:
+      - "3002:3002"
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"

@@ -43,7 +43,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/antichrist667/multirepo.git
+   git clone https://github.com/Matari7/veterinary-microservice
    ```
 2. Install NPM packages
    ```sh
@@ -103,7 +103,7 @@ Once logged in, you will get a JSON message with the token that lasts only 1 hou
 
 7. After the token that the system will provide you, you are going to put it in Authorization and in Bearer Token you paste the received token
 
-![Captura de pantalla](https://imgur.com/a/FGuOWov)
+![Captura de pantalla](https://i.imgur.com/BW8qBIx.png)
  <!-- CONTRIBUTING -->
 ## Contributing
 

@@ -6,7 +6,7 @@ const app = express();
 
 app.get('/pets', async (req, res) => {
   const pets = await redis.lrange('pets', 0, -1); // Get all pets from Redis
-  const result = pets.map(pets => JSON.parse(pets));
+  const result = pets.map(pet => JSON.parse(pet));
   res.status(200).json(result);
 });
 

@@ -8,8 +8,8 @@ app.use(bodyParser.json());
 
 app.post('/pets', async (req, res) => {
   const { name, breed, gender } = req.body;
-  const pets = { name, breed, gender };
-  await redis.lpush('pets', JSON.stringify(pets)); // Store in Redis
+  const pet = { name, breed, gender };
+  await redis.lpush('pets', JSON.stringify(pet)); // Store in Redis
   res.status(201).send('Pet added');
 });
 

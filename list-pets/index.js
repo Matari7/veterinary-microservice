@@ -25,10 +25,28 @@ app.get('/pets', async (req, res) => {
 });
 
 app.get('/pets2', (req, res) => {
-  res.json({
-    username: 'admin',
-    password: 'password'
-  });
+  res.json([
+    {
+      "name": "Fidoe",
+      "breed": "Labrador",
+      "gender": "Macho"
+    },
+    {
+      "name": "Bella",
+      "breed": "Beagle",
+      "gender": "Hembra"
+    },
+    {
+      "name": "Max",
+      "breed": "Golden Retriever",
+      "gender": "Macho"
+    },
+    {
+      "name": "Lucy",
+      "breed": "Bulldog",
+      "gender": "Hembra"
+    }
+  ]);
 });
 
 app.listen(3001, () => {

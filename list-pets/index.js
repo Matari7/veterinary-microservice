@@ -18,35 +18,10 @@ const authenticateToken = (req, res, next) => {
   });
 };
 
-/*app.get('/pets', async (req, res) => {
+app.get('/pets', async (req, res) => {
   const pets = await redis.lrange('pets', 0, -1); // Get all pets from Redis
   const result = pets.map(pet => JSON.parse(pet));
   res.status(200).json({ user: req.user, pets: result });
-});*/
-
-app.get('/pets', (req, res) => {
-  res.json([
-    {
-      "name": "Fidoe",
-      "breed": "Labrador",
-      "gender": "Macho"
-    },
-    {
-      "name": "Bella",
-      "breed": "Beagle",
-      "gender": "Hembra"
-    },
-    {
-      "name": "Max",
-      "breed": "Golden Retriever",
-      "gender": "Macho"
-    },
-    {
-      "name": "Lucy",
-      "breed": "Bulldog",
-      "gender": "Hembra"
-    }
-  ]);
 });
 
 app.listen(3001, () => {

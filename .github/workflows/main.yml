@@ -54,7 +54,7 @@ jobs:
         echo "${{ secrets.AWS_PRIVATE_KEY }}" > key.pem
         chmod 600 key.pem
 
-  
+
     - name: Pull Docker images
       run: |
         ssh -o StrictHostKeyChecking=no -i key.pem ec2-user@${{ secrets.EC2_HOST }} 'sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/authentication:latest'

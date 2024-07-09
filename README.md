@@ -41,7 +41,7 @@ You must have the Docker desktop downloaded on the computer, due to the docker-c
 
 _This is the installation of the project._
 
-1. Clone the repo
+1. Clone the repo.
    ```sh
    git clone https://github.com/Matari7/veterinary-microservice
    ```

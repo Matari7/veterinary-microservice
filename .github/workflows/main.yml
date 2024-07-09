@@ -60,7 +60,6 @@ jobs:
         ssh -o StrictHostKeyChecking=no -i key.pem ec2-user@${{ secrets.EC2_HOST }} 'sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/list-pets:latest'
         ssh -o StrictHostKeyChecking=no -i key.pem ec2-user@${{ secrets.EC2_HOST }} 'sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/pets:latest'
         
-        
     - name: Stop running containers
       run: |
         ssh -o StrictHostKeyChecking=no -i key.pem ec2-user@${{ secrets.EC2_HOST }} 'sudo docker stop authentication-plataform-aws || true'
